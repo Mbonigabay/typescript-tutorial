@@ -17,7 +17,6 @@ form.addEventListener("submit", (e) => {
     }
     else {
         doc = new Payment(tofrom.value, details.value, amount.valueAsNumber);
-        list.render(doc, type.value, 'end');
     }
-    console.log(doc);
+    list.render(doc, type.value, 'end');
 });
